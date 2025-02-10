@@ -1,54 +1,86 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-image: url('abstract-dark-red-4k.jpg');
+    background-image: url('abstract-blue-extruded-voronoi-blocks-background-minimal-light-clean-corporate-wall-3d-geometric-surface-illustration-polygonal-elements-displacement.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
-
 .title {
     width: 100%;
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 20px;
+    margin: 40px 20px 20px 20px; /* Added margin at top */
+    font-size: 20px;
 }
+
 .zigzag {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    border-radius: 3px;
 }
-.zigzag div {
-    width: 80%; /* Increased width */
+
+.zigzag button {
+    width: 22%; /* Increased width */
     margin: 30px; /* Increased margin */
     padding: 90px; /* Increased padding */
-    background-color: rgba(27, 26, 26, 0.5); /* Decreased opacity */
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.2); /* Decreased opacity */
+    box-shadow: 0 0 15px rgba(128, 127, 127, 0.1);
     transition: transform 0.3s ease;
+    border-radius: 80px;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    cursor: pointer;
 }
-.zigzag div:nth-child(odd) {
+
+.zigzag button:nth-child(odd) {
     align-self: flex-start;
 }
-.zigzag div:nth-child(even) {
+
+.zigzag button:nth-child(even) {
     align-self: flex-end;
 }
-.zigzag div:hover {
+
+.zigzag button:hover {
     transform: scale(1.1);
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+.zigzag button:active {
+    transform: scale(0.9);
 }
 
-a:hover {
-    color: #000000;
-    background-color: #ffffff;
-    padding: 3px;
-    border-radius: 3px;
-    box-shadow: 3px 3px 3px rgba(226, 21, 21, 0.1);
+.content{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 20px;
+    font-size: 20px;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+  
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar img {
+    width: 50px; /* Set the desired width */
+    height: 50px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area */
 }

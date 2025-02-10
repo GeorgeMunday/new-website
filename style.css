@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('abstract-dark-red-4k.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 20px;
+}
+.zigzag {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.zigzag div {
+    width: 80%; /* Increased width */
+    margin: 30px; /* Increased margin */
+    padding: 90px; /* Increased padding */
+    background-color: rgba(27, 26, 26, 0.5); /* Decreased opacity */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+.zigzag div:nth-child(odd) {
+    align-self: flex-start;
+}
+.zigzag div:nth-child(even) {
+    align-self: flex-end;
+}
+.zigzag div:hover {
+    transform: scale(1.1);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #000000;
+    background-color: #ffffff;
+}

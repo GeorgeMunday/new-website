@@ -4,7 +4,8 @@ body {
     padding: 0;
     background-image: url('abstract-blue-extruded-voronoi-blocks-background-minimal-light-clean-corporate-wall-3d-geometric-surface-illustration-polygonal-elements-displacement.jpg');
     background-size: fill;
-    background-repeat: repeat;
+    background-position: right;
+    font-family: 'Courier New', monospace;
 }
 
 .title {
@@ -37,6 +38,7 @@ body {
     color: rgb(255, 255, 255);
     font-size: 16px;
     cursor: pointer;
+    font-family: 'Courier New', monospace;
 }
 
 .zigzag button:hover {
@@ -50,8 +52,9 @@ body {
 .content {
     text-align: center;
     color: rgb(255, 255, 255);
-    margin: 20px;
-    font-size: 20px;
+    margin: 60px;
+    font-size: 18px;
+    font-family: 'Courier New', monospace;
 }
 
 .navbar {
@@ -63,13 +66,11 @@ body {
 }
 
 .navbar a {
-    float: left;
     display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
 
 .navbar img {

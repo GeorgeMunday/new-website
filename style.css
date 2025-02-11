@@ -93,18 +93,21 @@ body {
     width: 300px;
     height: 300px;
     border: 0;
-    float: right;
+    margin-left: 20px;
 }
 
 .text-quallifications{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
     width: 50%;
-    float: left;
+    justify-content: left;
     margin-right: 0;
 }
 
 .sub-title-container{
     display: flex;
-    justify-content: center;
+    justify-content: left;
     margin: 20px;
 }
 /* Media Queries */

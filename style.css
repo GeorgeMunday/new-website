@@ -2,18 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     background-image: url('abstract-blue-extruded-voronoi-blocks-background-minimal-light-clean-corporate-wall-3d-geometric-surface-illustration-polygonal-elements-displacement.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: fill;
+    background-repeat: repeat;
 }
+
 .title {
     width: 100%;
     display: flex;
     justify-content: center;
     color: rgb(255, 255, 255);
     text-align: center;
-    margin: 40px 20px 20px 20px; /* Added margin at top */
+    margin: 40px 20px 20px 20px;
     font-size: 20px;
 }
 
@@ -26,10 +26,10 @@ body {
 }
 
 .zigzag button {
-    width: 22%; /* Increased width */
-    margin: 30px; /* Increased margin */
-    padding: 90px; /* Increased padding */
-    background-color: rgba(255, 255, 255, 0.2); /* Decreased opacity */
+    width: 22%;
+    margin: 30px;
+    padding: 90px;
+    background-color: rgba(255, 255, 255, 0.2);
     box-shadow: 0 0 15px rgba(128, 127, 127, 0.1);
     transition: transform 0.3s ease;
     border-radius: 80px;
@@ -37,14 +37,6 @@ body {
     color: rgb(255, 255, 255);
     font-size: 16px;
     cursor: pointer;
-}
-
-.zigzag button:nth-child(odd) {
-    align-self: flex-start;
-}
-
-.zigzag button:nth-child(even) {
-    align-self: flex-end;
 }
 
 .zigzag button:hover {
@@ -55,21 +47,21 @@ body {
     transform: scale(0.9);
 }
 
-.content{
+.content {
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 20px;
     font-size: 20px;
 }
+
 .navbar {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    position: fixed;
     bottom: 0;
     width: 100%;
 }
-  
+
 .navbar a {
     float: left;
     display: block;
@@ -79,8 +71,71 @@ body {
     text-decoration: none;
     font-size: 17px;
 }
+
 .navbar img {
-    width: 50px; /* Set the desired width */
-    height: 50px; /* Set the desired height */
-    object-fit: cover; /* Ensure the image covers the area */
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+/* Media Queries */
+@media (max-width: 1440px) {
+    .title {
+        font-size: 18px;
+    }
+    .zigzag button {
+        width: 24%;
+        padding: 80px;
+    }
+    .content {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 16px;
+    }
+    .zigzag button {
+        width: 28%;
+        padding: 70px;
+    }
+    .content {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 14px;
+    }
+    .zigzag button {
+        width: 32%;
+        padding: 60px;
+    }
+    .content {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 12px;
+    }
+    .zigzag {
+        flex-direction: column;
+        align-items: center;
+    }
+    .zigzag button {
+        width: 80%;
+        padding: 50px;
+        margin: 20px 0;
+    }
+    .content {
+        font-size: 12px;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
 }
